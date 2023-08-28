@@ -251,7 +251,7 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 <img width="619" alt="스크린샷 2023-08-29 오전 1 13 18" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/7a7f61fc-3521-442a-93f2-6db358246dbf">
 
 ## 고객 성별 / 연령대 실시간 추론
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/2e268e1e-f8cd-4ffd-b8dd-a05b2f5e854a">
+<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/89e3a736-8437-4b6d-be8c-bfc5b24d6e30">
 
 ## 고객 행동 패턴 실시간 추론
 <img width="619" alt="스크린샷 2023-08-29 오전 12 36 52" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2b47d5ad-ec43-474c-8d4e-5c5405fb5f0b">
