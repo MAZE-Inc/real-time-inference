@@ -242,5 +242,8 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 ## 고객 성별 / 연령대 실시간 추론
 
 ## 고객 행동 패턴 실시간 추론
+<img width="619" alt="스크린샷 2023-08-29 오전 12 36 52" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2b47d5ad-ec43-474c-8d4e-5c5405fb5f0b">
 
 ## 주문 메뉴 / 매출 실시간 추론
+<img width="621" alt="스크린샷 2023-08-29 오전 1 00 31" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/f730ccbe-f1c6-498a-9b59-47f14c17705a">
+
