@@ -1,17 +1,5 @@
 # real-time-inference
 
-- 메뉴/매출 추론
-    - 메뉴 정보는 Item 테이블에서 가져오는 걸로 (얘는 실제 코드도 그렇게 작성해야 함)
-    - 매출 추론은 menu tracking_id로 예측 한다고 적는 걸로.
- 
-# 핵심기술 (사업 계획서 p.11 부터)
-
-1. [IoB + 딥러닝(CNN)] 카페 내 현황(**좌석 점유율**, **고객 외형**, **고객 행동**, **주문 메뉴**)을 실시간 추론 
-    
-    달성과제: IoB장치(Raspberry Pi 4B)에 탑재를 위한 CNN모델 경량화 + 정확도 및 속도 유지 
-    
-    수행기능: 실시간 영상 분석을 통한 카페 내 현황 실시간 데이터 마이닝(**4종의 CNN 모델**) 
-    
 |추론 항목|비고|
 |----|---|
 |좌석 점유율|시간대별 좌석 점유현황 실시간 파악|
@@ -172,7 +160,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D BUILD_EXAMPLES=OFF ..
 ```
 
-순조롭게 진행되었을 때 아래와 같은 스크린샷이 나옵니다.
+순조롭게 진행되었을 때 아래와 같은 스크린샷이 나옵니다.   
 ![image](https://github.com/MAZE-Inc/real-time-inference/assets/129044040/121e6760-7cf4-4452-90d5-a7a2868daad4)
 
 위와 같은 결과창이 나오면 아래 명령어를 입력합니다.   
@@ -180,7 +168,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 $ make -j4
 ```
 
-아래와 같은 결과가 나오면 성공입니다.
+아래와 같은 결과가 나오면 성공입니다.   
 
 ![image](https://github.com/MAZE-Inc/real-time-inference/assets/129044040/b0fa9da5-e20c-4629-9320-95d61e8bb9fd)
 
@@ -193,7 +181,7 @@ $ make clean
 $ sudo apt-get update
 ```
 
-아래 그림처럼 확인이 가능합니다.
+아래 그림처럼 확인이 가능합니다.   
 <img width="417" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/35c071df-f4a5-4438-8d7b-3e4eab56093a">
 
 다음같이 진행이 되면 이제 위에 말했던대로 스왑 메모리를 낮춰줍니다.   
@@ -214,7 +202,8 @@ $ sudo rm -rf ~/opencv
 $ sudo rm -rf ~/opencv_contrib
 ```
 
-이제 OpenCV 설치를 마쳤습니다.
+이제 OpenCV 설치를 마쳤습니다.   
+이제 코드를 실행하기 위해 복제를 진행합니다.   
 
 ``` shell
 # git 코드 복제
@@ -222,7 +211,10 @@ $ git clone https://github.com/MAZE-Inc/real-time-inference.git
 # 패키지 설치.
 $ pip3 install -r requirements.txt
 ```
-| 사전조건 | Python >= 3.7
+
+패키지 내에 버전은 아래와 같습니다.   
+``` shell
+Python >= 3.7
 gitpython>=3.1.30   
 matplotlib>=3.3   
 numpy>=1.18.5   
@@ -238,8 +230,10 @@ torchvision>=0.8.1
 tqdm>=4.64.0   
 ultralytics>=8.0.100 
 onnxruntime
-|
-| --- | --- |
+```
+
+torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이동하여 다운로드 받으면 됩니다.
+<https://pytorch.org/get-started/locally>
 
     **➡️ 4개의 CNN 모델**
 ## 좌석 점유율 실시간 추론
