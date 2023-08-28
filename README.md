@@ -245,7 +245,6 @@ onnxruntime
 torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이동하여 다운로드 받으면 됩니다.
 <https://pytorch.org/get-started/locally>
 
-git
 
 # 4개의 모델
 ## 좌석 점유율 실시간 추론
