@@ -246,7 +246,7 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 <https://pytorch.org/get-started/locally>
 
 
-# 4개의 모델
+# 실시간 추론 4개의 모델
 ## 좌석 점유율 실시간 추론
 <img width="619" alt="스크린샷 2023-08-29 오전 1 13 18" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/7a7f61fc-3521-442a-93f2-6db358246dbf">
 
