@@ -1,4 +1,4 @@
-# real-time-inference
+# A-MAZE: real-time-inference
 
 - [IoB + 딥러닝] 카페 내 현황(**좌석 점유율**, **고객 외형**, **고객 행동**, **주문 메뉴**)을 실시간 추론   
 - IoT 장치(Raspberry Pi 4B)에 탑재를 위한 모델 경량화 + 정확도 및 속도 유지   
