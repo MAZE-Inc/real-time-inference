@@ -207,14 +207,21 @@ $ sudo rm -rf ~/opencv_contrib
 ```
 
 이제 OpenCV 설치를 마쳤습니다.   
+
+## 실행
 이제 코드를 실행하기 위해 복제를 진행합니다.   
 
 ``` shell
 # git 코드 복제
 $ git clone https://github.com/MAZE-Inc/real-time-inference.git
+```
+<img width="620" alt="clone" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/80010479-c739-48ae-ab6b-4f2adee57d27">
+
+```shell
 # 패키지 설치.
 $ pip3 install -r requirements.txt
 ```
+<img width="659" alt="install" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2014e20b-c42d-4ec3-813d-25578288c01c">
 
 패키지 내에 버전은 아래와 같습니다.   
 ``` shell
@@ -235,9 +242,10 @@ tqdm>=4.64.0
 ultralytics>=8.0.100 
 onnxruntime
 ```
-
 torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이동하여 다운로드 받으면 됩니다.
 <https://pytorch.org/get-started/locally>
+
+git
 
 # 4개의 모델
 ## 좌석 점유율 실시간 추론
