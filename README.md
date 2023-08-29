@@ -264,6 +264,6 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 
 ## 주문 메뉴 / 매출 실시간 추론
 - 아래에 이미지를 보면 Ice drink가 한 잔 인식된다.
-- 카페 픽업대에 놓여있는 음료를 음료 인식 모델과 메이즈 알고리즘을 통해 판매된 음료의 수와 대략적인 매출의 추이를 추론한다.
+- 카페 픽업대에 놓여있는 음료를 음료 인식 모델과 메이즈 알고리즘을 통해 판매된 음료의 수와 대략적인 매출을 추론한다.
 <img width="621" alt="스크린샷 2023-08-29 오전 1 00 31" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/f730ccbe-f1c6-498a-9b59-47f14c17705a">
 
