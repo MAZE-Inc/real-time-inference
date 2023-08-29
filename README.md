@@ -165,7 +165,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ```
 
 순조롭게 진행되었을 때 아래와 같은 스크린샷이 나옵니다.   
-![image](https://github.com/MAZE-Inc/real-time-inference/assets/129044040/121e6760-7cf4-4452-90d5-a7a2868daad4){: width="619"}
+<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/121e6760-7cf4-4452-90d5-a7a2868daad4">
 
 위와 같은 결과창이 나오면 아래 명령어를 입력합니다.   
 ``` shell
