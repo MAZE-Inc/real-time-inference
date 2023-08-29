@@ -74,7 +74,7 @@ $ sudo reboot
 $ free -m
 ```
 
-![image](https://github.com/MAZE-Inc/real-time-inference/assets/129044040/3d93b0dd-59d5-4c83-8a4b-d0b125dfd39a){: width="619"}
+<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/3d93b0dd-59d5-4c83-8a4b-d0b125dfd39a">
 
 RAM이 1GB인 경우 4096이 아닌 5120으로 스왑 메모리를 확장 해야합니다.   
 4GB도 마찬가지로 2048GB의 스왑 메모리로 진행 하면 충분 합니다. 4GB의 경우 /sbin/dphys-swapfile 에서 CONF_MAXSWAP를 수정 할 필요가 없습니다.   
@@ -82,7 +82,7 @@ RAM이 1GB인 경우 4096이 아닌 5120으로 스왑 메모리를 확장 해야
 굳이 불필요하게 SD 카드를 낭비 할 필요가 없습니다.   
 
 다음으로 진행 할 부분은 아래 그림을 참고하여 GPU 메모리를 128 Mbyte로 변경해 주세요.   
-![image](https://github.com/MAZE-Inc/real-time-inference/assets/129044040/8656d751-e6a3-48eb-a384-2b946977b6b0){: width="619"}
+<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/8656d751-e6a3-48eb-a384-2b946977b6b0">
 
 메모리 확장을 다 진행 했다면 이제 OpenCV 4.8 버전을 설치 스크립트 작성을 진행합니다.  
 전체 설치 과정은 1시간 30분이 소요되며 스왑 메모리(5.8 GB)가 충분한지 확인해 주세요 !
@@ -174,7 +174,7 @@ $ make -j4
 
 아래와 같은 결과가 나오면 성공입니다.   
 
-![image](https://github.com/MAZE-Inc/real-time-inference/assets/129044040/b0fa9da5-e20c-4629-9320-95d61e8bb9fd){: width="619"}
+<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/b0fa9da5-e20c-4629-9320-95d61e8bb9fd">
 
 다음 명령어를 입력하여 모든 패키지를 설치합니다.
 ``` shell
