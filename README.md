@@ -256,6 +256,9 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 - 아래 이미지를 보면 Male 2명, Unknown Male 1명으로 남성은 총 3명 Female 2명, Unknown Female 4명으로 여성은 6명으로 추론된다.
 - 성별을 판단하는 부분은 성별 인식 모델을 통해 추론을 진행합니다.
 <img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/89e3a736-8437-4b6d-be8c-bfc5b24d6e30">
+<img width="619" alt="스크린샷 2023-08-30 오전 9 46 41" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/3d5d995e-ca55-42b7-9f41-629e187c1ef3">
+<img width="619" alt="스크린샷 2023-08-30 오전 9 46 19" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/54da988a-637a-4ca8-a7db-9a16f3c68bc8">
+<img width="619" alt="스크린샷 2023-08-30 오전 9 45 56" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/467b4e75-8bae-48a6-b1d5-678df37d67a2">
 
 ## 고객 행동 패턴 실시간 추론
 - 아래 이미지를 보면 laptop을 이용하는 고객이 4명으로 추론된다.
