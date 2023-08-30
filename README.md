@@ -252,6 +252,7 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 - 좌석에 앉은 사람이 해당 좌석에 해당하는지 판단하는 부분은 사람 인식 모델과 메이즈 알고리즘을 통해 실시간 추론을 진행한다.
 <img width="619" alt="스크린샷 2023-08-29 오전 1 13 18" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/7a7f61fc-3521-442a-93f2-6db358246dbf">
 <img width="619" alt="스크린샷 2023-08-30 오전 10 06 01" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/911a020b-ada7-4e2f-8219-52e5f298d218">
+<img width="954" alt="스크린샷 2023-08-30 오전 10 15 50" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/fad202b6-b4bb-412e-a075-d36568e2b333">
 
 ## 고객 성별 실시간 추론
 - 아래 이미지를 보면 Male 2명, Unknown Male 1명으로 남성은 총 3명 Female 2명, Unknown Female 4명으로 여성은 6명으로 추론된다.
