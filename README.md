@@ -248,33 +248,42 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 
 # 실시간 추론 4개의 모델
 ## 좌석 점유율 실시간 추론
-- 아래 이미지를 보면 6개의 좌석에 4번 테이블과 6번 테이블에 사람이 앉아 있으므로 점유율은 2/6으로 33.3%가 된다.
 - 좌석에 앉은 사람이 해당 좌석에 해당하는지 판단하는 부분은 사람 인식 모델과 메이즈 알고리즘을 통해 실시간 추론을 진행한다.
+- 아래 이미지를 보면 6개의 좌석에 4번 테이블과 6번 테이블에 사람이 앉아 있으므로 점유율은 2/6으로 33.3%가 된다.
 <img width="619" alt="스크린샷 2023-08-29 오전 1 13 18" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/7a7f61fc-3521-442a-93f2-6db358246dbf">
+- 아래 이미지를 보면 3번 테이블에 4명, 5번 테이블에 1명, 6번 테이블에 1명이 앉아 있는 것으로 확인되며 총 8개의 테이블 중 3개의 테이블에 앉아있으므로 37.5%가 된다.
 <img width="619" alt="스크린샷 2023-08-30 오전 10 06 01" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/911a020b-ada7-4e2f-8219-52e5f298d218">
-<img width="954" alt="스크린샷 2023-08-30 오전 10 15 50" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/fad202b6-b4bb-412e-a075-d36568e2b333">
+- 아래 이미지를 보면 3개의 테이블 중 2개의 테이블에 사람이 앉아 있으므로 좌석 점유율이 66.6%가 된다.
+<img width="619" alt="스크린샷 2023-08-30 오전 10 15 50" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/fad202b6-b4bb-412e-a075-d36568e2b333">
 
 ## 고객 성별 실시간 추론
-- 아래 이미지를 보면 Male 2명, Unknown Male 1명으로 남성은 총 3명 Female 2명, Unknown Female 4명으로 여성은 6명으로 추론된다.
 - 성별을 판단하는 부분은 성별 인식 모델을 통해 추론을 진행합니다.
+- 아래 이미지를 보면 Male 2명, Unknown Male 1명으로 남성은 총 3명 Female 2명, Unknown Female 4명으로 여성은 6명으로 추론된다.
 <img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/89e3a736-8437-4b6d-be8c-bfc5b24d6e30">
+- 아래 이미지를 보면 여성 2명, 남성 2명으로 추론된다.
 <img width="619" alt="스크린샷 2023-08-30 오전 9 46 41" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/3d5d995e-ca55-42b7-9f41-629e187c1ef3">
+- 아래 이미지를 보면 여성 8명, 남성 6명으로 추론된다.
 <img width="619" alt="스크린샷 2023-08-30 오전 9 46 19" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/54da988a-637a-4ca8-a7db-9a16f3c68bc8">
+- 아래 이미지를 보면 여성 1명, 남성 5명으로 추론된다.
 <img width="619" alt="스크린샷 2023-08-30 오전 9 45 56" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/467b4e75-8bae-48a6-b1d5-678df37d67a2">
 
 ## 고객 행동 패턴 실시간 추론
-- 아래 이미지를 보면 laptop을 이용하는 고객이 4명으로 추론된다.
-- 따라서 현재 화면에는 노트북을 이용하는 고객 60.0%, 이야기를 하는 고객 40.0%로 추정한다. 
+- 고객 행동 패턴 실시간 추론은 고객이 카페 내에서 어떤 행동을 취하고 있는지 현재 상황에 맞춰 추론하는 부분으로 실시간 추론 모델과 메이즈 알고리즘을 통하여 추론을 진행한다.
+- 아래 이미지를 보면 laptop을 이용하는 고객이 4명으로 추론된다. 따라서 현재 화면에는 노트북을 이용하는 고객 60.0%, 이야기를 하는 고객 40.0%로 추정한다.
+<img width="619" alt="스크린샷 2023-08-29 오전 12 36 52" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2b47d5ad-ec43-474c-8d4e-5c5405fb5f0b">
+- 아래 이미지를 보면 laptop을 이용하는 고객이 3명으로 추론된다. 좌석에 앉아 있는 고객은 총 6명이므로 노트북을 이용하는 고객이 50%, 이야기를 하는 고객을 50%로 추정한다.
 <img width="619" alt="스크린샷 2023-08-30 오전 9 56 29" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/58124a53-2318-4c3d-8b3f-2748d35a915e">
 
-<img width="619" alt="스크린샷 2023-08-29 오전 12 36 52" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2b47d5ad-ec43-474c-8d4e-5c5405fb5f0b">
-
 ## 주문 메뉴 / 매출 실시간 추론
-- 아래에 이미지를 보면 Ice drink가 한 잔 인식된다.
 - 카페 픽업대에 놓여있는 음료를 음료 인식 모델과 메이즈 알고리즘을 통해 판매된 음료의 수와 대략적인 매출을 추론한다.
-
+- 아래에 이미지를 보면 Ice drink가 한 잔 인식된다.
+- 픽업대를 지난 음료의 수를 확인 후 해당 카페의 Ice 음료의 평균적인 판매 가격을 확인하고, hot 음료의 평균적인 판매 가격을 확인하여 대략적인 매출을 추론한다.
+<img width="619" alt="스크린샷 2023-08-29 오전 1 00 31" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/f730ccbe-f1c6-498a-9b59-47f14c17705a">
+- 아래 이미지를 보면 Ice 음료가 6개, hot 음료가 1개 인식된다.
 <img width="619" alt="스크린샷 2023-08-30 오전 9 53 21" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/6ab9c6c2-71a1-4798-8023-cc82adea47a5">
+- 아래 이미지를 보면 Ice 음료가 2개, hot 음료가 2개 인식된다.
 <img width="619" alt="스크린샷 2023-08-30 오전 9 53 00" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/d9f376a4-8918-42ce-9c31-8ce0d4b04e4e">
+- 아래 이미지를 보면 Ice 음료가 1개, hot 음료가 3개 인식된다.
 <img width="619" alt="스크린샷 2023-08-30 오전 9 52 43" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/04af064e-b643-43dc-a742-7a610a57d16a">
-<img width="621" alt="스크린샷 2023-08-29 오전 1 00 31" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/f730ccbe-f1c6-498a-9b59-47f14c17705a">
+
 
