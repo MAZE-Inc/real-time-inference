@@ -251,6 +251,7 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 - 아래 이미지를 보면 6개의 좌석에 4번 테이블과 6번 테이블에 사람이 앉아 있으므로 점유율은 2/6으로 33.3%가 된다.
 - 좌석에 앉은 사람이 해당 좌석에 해당하는지 판단하는 부분은 사람 인식 모델과 메이즈 알고리즘을 통해 실시간 추론을 진행한다.
 <img width="619" alt="스크린샷 2023-08-29 오전 1 13 18" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/7a7f61fc-3521-442a-93f2-6db358246dbf">
+<img width="619" alt="스크린샷 2023-08-30 오전 10 06 01" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/911a020b-ada7-4e2f-8219-52e5f298d218">
 
 ## 고객 성별 실시간 추론
 - 아래 이미지를 보면 Male 2명, Unknown Male 1명으로 남성은 총 3명 Female 2명, Unknown Female 4명으로 여성은 6명으로 추론된다.
@@ -263,6 +264,8 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 ## 고객 행동 패턴 실시간 추론
 - 아래 이미지를 보면 laptop을 이용하는 고객이 4명으로 추론된다.
 - 따라서 현재 화면에는 노트북을 이용하는 고객 60.0%, 이야기를 하는 고객 40.0%로 추정한다. 
+<img width="619" alt="스크린샷 2023-08-30 오전 9 56 29" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/58124a53-2318-4c3d-8b3f-2748d35a915e">
+
 <img width="619" alt="스크린샷 2023-08-29 오전 12 36 52" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2b47d5ad-ec43-474c-8d4e-5c5405fb5f0b">
 
 ## 주문 메뉴 / 매출 실시간 추론
