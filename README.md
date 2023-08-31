@@ -246,6 +246,7 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 <https://pytorch.org/get-started/locally>
 
 ## 모델 실행
+밑에 코드는 라즈베리파이에서만 실행 가능합니다.
 ```shell
 ./detect_video.bin
 ```
