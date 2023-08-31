@@ -1,0 +1,72 @@
+cafe_id: test
+cam_id: 0
+open_time: 1
+close_time: 23
+# {0: '월요일', 1:'화요일', 2:'수요일', 3:'목요일', 4:'금요일', 5:'토요일', 6:'일요일'}
+day_off: [6]
+block_tracking_zone:
+    x1: 0
+    y1: 0
+    x2: 0
+    y2: 0
+tracking_in_zone:
+    x1: 100
+    y1: 100
+    x2: 540
+    y2: 380
+tracking_out_zone:
+    x1: 0
+    y1: 0
+    x2: 640
+    y2: 480
+seat:
+    seat1:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat2:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat3:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat4:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat5:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat6:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat7:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat8:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat9:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
+    seat10:
+        x1: 0
+        y1: 0
+        x2: 0
+        y2: 0
