@@ -245,6 +245,12 @@ onnxruntime
 torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이동하여 다운로드 받으면 됩니다.
 <https://pytorch.org/get-started/locally>
 
+## 모델 실행
+```shell
+./detect_video.bin
+```
+<img width="662" alt="스크린샷 2023-08-31 오후 10 35 33" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/827bc2c3-ac2d-4382-9f34-98ac057fed0d">
+
 
 # 실시간 추론 4개의 모델
 ## 좌석 점유율 실시간 추론
