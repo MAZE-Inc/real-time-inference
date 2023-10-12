@@ -46,7 +46,7 @@ $ sudo apt-get install vim
 # 최대 스왑 메모리 확장 ( CONF_MAXSWAP )
 $ sudo vim /sbin/dphys-swapfile
 ```
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/4b606b9e-44c8-4140-ab5e-2d4774202eb5">
+<img src="./images/사전조건_이미지_0.png" width="619">
 
 vim 편집기로 파일을 열고 <**/CONF_MAXSWAP**> 을 통해서 CONF_MAXSWAP이 있는 줄로 이동이 가능합니다.   
 해당 줄로 이동하여 <**i**> 키를 눌러 insert 모드로 변경합니다.   
@@ -60,7 +60,7 @@ vim 편집기로 파일을 열고 <**/CONF_MAXSWAP**> 을 통해서 CONF_MAXSWAP
 $ sudo vim /etc/dphys-swapfile
 ```
 
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/229d47b2-7105-421f-af67-709b3d21e23a">
+<img src="./images/사전조건_이미지_1.png" width="619">
 
 확장을 마친 후 재부팅을 진행해 줍니다.
 ``` shell
@@ -74,7 +74,7 @@ $ sudo reboot
 $ free -m
 ```
 
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/3d93b0dd-59d5-4c83-8a4b-d0b125dfd39a">
+<img src="./images/사전조건_이미지_2.png" width="619">
 
 RAM이 1GB인 경우 4096이 아닌 5120으로 스왑 메모리를 확장 해야합니다.   
 4GB도 마찬가지로 2048GB의 스왑 메모리로 진행 하면 충분 합니다. 4GB의 경우 /sbin/dphys-swapfile 에서 CONF_MAXSWAP를 수정 할 필요가 없습니다.   
@@ -82,7 +82,7 @@ RAM이 1GB인 경우 4096이 아닌 5120으로 스왑 메모리를 확장 해야
 굳이 불필요하게 SD 카드를 낭비 할 필요가 없습니다.   
 
 다음으로 진행 할 부분은 아래 그림을 참고하여 GPU 메모리를 128 Mbyte로 변경해 주세요.   
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/8656d751-e6a3-48eb-a384-2b946977b6b0">
+<img src="./images/사전조건_이미지_3.png" width="619">
 
 메모리 확장을 다 진행 했다면 이제 OpenCV 4.8 버전을 설치 스크립트 작성을 진행합니다.  
 전체 설치 과정은 1시간 30분이 소요되며 스왑 메모리(5.8 GB)가 충분한지 확인해 주세요 !
@@ -165,7 +165,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ```
 
 순조롭게 진행되었을 때 아래와 같은 스크린샷이 나옵니다.   
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/121e6760-7cf4-4452-90d5-a7a2868daad4">
+<img src="./images/사전조건_이미지_4.png" width="619">
 
 위와 같은 결과창이 나오면 아래 명령어를 입력합니다.   
 ``` shell
@@ -174,7 +174,7 @@ $ make -j4
 
 아래와 같은 결과가 나오면 성공입니다.   
 
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/b0fa9da5-e20c-4629-9320-95d61e8bb9fd">
+<img src="./images/사전조건_이미지_5.png" width="619">
 
 다음 명령어를 입력하여 모든 패키지를 설치합니다.
 ``` shell
@@ -186,7 +186,7 @@ $ sudo apt-get update
 ```
 
 아래 그림처럼 확인이 가능합니다.   
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/35c071df-f4a5-4438-8d7b-3e4eab56093a">
+<img src="./images/사전조건_이미지_6.png" width="619">
 
 다음같이 진행이 되면 이제 위에 말했던대로 스왑 메모리를 낮춰줍니다.   
 SD 메모리 카드는 제한된 수의 사이클만 사용 할 수 있는데 최소한으로 유지를 해야 SD 카드의 마모를 막을 수 있습니다.
@@ -215,13 +215,13 @@ $ sudo rm -rf ~/opencv_contrib
 # git 코드 복제
 $ git clone https://github.com/MAZE-Inc/real-time-inference.git
 ```
-<img width="619" alt="clone" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/80010479-c739-48ae-ab6b-4f2adee57d27">
+<img src="./images/사전조건_이미지_7.png" width="619">
 
 ```shell
 # 패키지 설치.
 $ pip3 install -r requirements.txt
 ```
-<img width="619" alt="install" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2014e20b-c42d-4ec3-813d-25578288c01c">
+<img src="./images/사전조건_이미지_8.png" width="619">
 
 패키지 내에 버전은 아래와 같습니다.   
 ``` shell
@@ -250,56 +250,68 @@ torch의 경우 [pytorch](https://pytorch.org/get-started/locally) 링크로 이
 ```shell
 ./detect_video.bin
 ```
-<img width="662" alt="스크린샷 2023-08-31 오후 10 35 33" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/827bc2c3-ac2d-4382-9f34-98ac057fed0d">
+<img src="./images/모델실행_이미지.png" width="619">
 
 
 # 실시간 추론 4개의 모델
 ## 좌석 점유율 실시간 추론
 - 좌석에 앉은 사람이 해당 좌석에 해당하는지 판단하는 부분은 사람 인식 모델과 메이즈 알고리즘을 통해 실시간 추론을 진행한다.
 - 아래 이미지를 보면 6개의 좌석에 4번 테이블과 6번 테이블에 사람이 앉아 있으므로 점유율은 2/6으로 33.3%가 된다.
-<img width="619" alt="스크린샷 2023-08-29 오전 1 13 18" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/7a7f61fc-3521-442a-93f2-6db358246dbf">
+
+<img src="./images/실시간 좌석 점유율1.png" width="619">
 
 - 아래 이미지를 보면 3번 테이블에 4명, 5번 테이블에 1명, 6번 테이블에 1명이 앉아 있는 것으로 확인되며 총 8개의 테이블 중 3개의 테이블에 앉아있으므로 37.5%가 된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 10 06 01" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/911a020b-ada7-4e2f-8219-52e5f298d218">
+
+<img src="./images/실시간 좌석 점유율2.png" width="619">
 
 - 아래 이미지를 보면 3개의 테이블 중 2개의 테이블에 사람이 앉아 있으므로 좌석 점유율이 66.6%가 된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 10 15 50" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/fad202b6-b4bb-412e-a075-d36568e2b333">   
+
+<img src="./images/실시간 좌석 점유율3.png" width="619">
 
 ## 고객 성별 실시간 추론
 - 성별을 판단하는 부분은 성별 인식 모델을 통해 추론을 진행합니다.
 - 아래 이미지를 보면 Male 2명, Unknown Male 1명으로 남성은 총 3명 Female 2명, Unknown Female 4명으로 여성은 6명으로 추론된다.
-<img width="619" alt="image" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044040/89e3a736-8437-4b6d-be8c-bfc5b24d6e30">
+
+<img src="./images/실시간 성별1.png" width="619">
 
 - 아래 이미지를 보면 여성 2명, 남성 2명으로 추론된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 9 46 41" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/3d5d995e-ca55-42b7-9f41-629e187c1ef3">   
+
+<img src="./images/실시간 성별2.png" width="619">
 
 - 아래 이미지를 보면 여성 8명, 남성 6명으로 추론된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 9 46 19" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/54da988a-637a-4ca8-a7db-9a16f3c68bc8">   
+
+<img src="./images/실시간 성별3.png" width="619">
 
 - 아래 이미지를 보면 여성 1명, 남성 5명으로 추론된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 9 45 56" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/467b4e75-8bae-48a6-b1d5-678df37d67a2">   
+
+<img src="./images/실시간 성별4.png" width="619">  
 
 ## 고객 행동 패턴 실시간 추론
 - 고객 행동 패턴 실시간 추론은 고객이 카페 내에서 어떤 행동을 취하고 있는지 현재 상황에 맞춰 추론하는 부분으로 실시간 추론 모델과 메이즈 알고리즘을 통하여 추론을 진행한다.
 - 아래 이미지를 보면 laptop을 이용하는 고객이 4명으로 추론된다. 따라서 현재 화면에는 노트북을 이용하는 고객 60.0%, 이야기를 하는 고객 40.0%로 추정한다.
-<img width="619" alt="스크린샷 2023-08-29 오전 12 36 52" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/2b47d5ad-ec43-474c-8d4e-5c5405fb5f0b">   
+
+<img src="./images/실시간 행동1.png" width="619">
 
 - 아래 이미지를 보면 laptop을 이용하는 고객이 3명으로 추론된다. 좌석에 앉아 있는 고객은 총 6명이므로 노트북을 이용하는 고객이 50%, 이야기를 하는 고객을 50%로 추정한다.
-<img width="619" alt="스크린샷 2023-08-30 오전 9 56 29" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/58124a53-2318-4c3d-8b3f-2748d35a915e">   
+
+<img src="./images/실시간 행동2.png" width="619"> 
 
 ## 주문 메뉴 / 매출 실시간 추론
 - 카페 픽업대에 놓여있는 음료를 음료 인식 모델과 메이즈 알고리즘을 통해 판매된 음료의 수와 대략적인 매출을 추론한다.
 - 아래에 이미지를 보면 Ice drink가 한 잔 인식된다.
 - 픽업대를 지난 음료의 수를 확인 후 해당 카페의 Ice 음료의 평균적인 판매 가격을 확인하고, hot 음료의 평균적인 판매 가격을 확인하여 대략적인 매출을 추론한다.
-<img width="619" alt="스크린샷 2023-08-29 오전 1 00 31" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/f730ccbe-f1c6-498a-9b59-47f14c17705a">   
+
+<img src="./images/실시간 메뉴1.png" width="619">
 
 - 아래 이미지를 보면 Ice 음료가 6개, hot 음료가 1개 인식된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 9 53 21" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/6ab9c6c2-71a1-4798-8023-cc82adea47a5">   
+
+<img src="./images/실시간 메뉴2.png" width="619">
 
 - 아래 이미지를 보면 Ice 음료가 2개, hot 음료가 2개 인식된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 9 53 00" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/d9f376a4-8918-42ce-9c31-8ce0d4b04e4e">   
+
+<img src="./images/실시간 메뉴3.png" width="619"> 
 
 - 아래 이미지를 보면 Ice 음료가 1개, hot 음료가 3개 인식된다.
-<img width="619" alt="스크린샷 2023-08-30 오전 9 52 43" src="https://github.com/MAZE-Inc/real-time-inference/assets/129044938/04af064e-b643-43dc-a742-7a610a57d16a">   
 
+<img src="./images/실시간 메뉴4.png" width="619">
 
